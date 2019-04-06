@@ -39,7 +39,8 @@
     "sass-graph": "^3.0.4"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "sortablejs": "^1.8.4"
   },
   "repository": {
     "type": "git",
