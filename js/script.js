@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
     name: "Kanban Board",
     addColumn: function(column) {
       this.element.appendChild(column.element);
-      initSortable(column.id);
+      initSortable(column.id, "kanban-column");
     },
     element: document.querySelector("#board .column-container")
   };
@@ -112,11 +112,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
   // allow sorting cards
-  function initSortable(id) {
+  function initSortable(id, group) {
     var el = document.getElementById(id);
     var sortable = Sortable.create(el, {
-      group: "kanban",
-      sort: true
+      group: group,
+      sort: true,
+      animation: 150
     });
   }
 
