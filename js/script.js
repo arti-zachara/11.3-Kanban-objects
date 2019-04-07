@@ -44,7 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
           self.removeColumn();
         }
 
-        if (event.target.classList.contains("add-card")) {
+        if (
+          event.target.classList.contains("add-card") ||
+          event.target.classList.contains("btn-add")
+        ) {
           self.addCard(new Card(prompt("Enter the name of the card")));
         }
       });

@@ -4,8 +4,6 @@ $column-header: #be7a25;
 $col-background: #bea88b;
 $card-background: rgb(248, 238, 225);
 $add-btn-column: #643604;
-$add-btn: rgb(47, 212, 18);
-$add-btn-hover: rgb(42, 156, 22);
 $remove-btn: rgb(255, 32, 32);
 $remove-btn-hover: rgb(179, 11, 11);
 
@@ -47,7 +45,9 @@ button {
     }
   }
 }
-
+.btn-add {
+  margin-left: 4px;
+}
 header {
   background: rgba(248, 238, 225, 0.3);
   color: $page-header;
@@ -56,7 +56,7 @@ header {
     font-family: $header-font;
     font-weight: 300;
   }
-  button {
+  .create-column {
     background: $add-btn-column;
     color: white;
     border: 0;
@@ -64,6 +64,9 @@ header {
     font-family: $text-font;
     font-size: 14px;
     padding: 10px;
+    &:hover {
+      background: $column-header;
+    }
   }
 }
 
@@ -105,6 +108,9 @@ header {
     font-family: $text-font;
     font-size: 12px;
     padding: 4px 10px;
+    &:hover {
+      background: white;
+    }
   }
 }
 .card {

@@ -10,7 +10,10 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans+Condensed:300" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans+Condensed:300"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
@@ -18,7 +21,7 @@
       <header>
         <h1>Kanban board</h1>
         <button class="create-column">
-          Add a column <span class="btn-round btn-add"><i class="fas fa-plus"></i></span></i>
+          Add a column <i class="btn-add fas fa-plus"></i>
         </button>
       </header>
 
@@ -34,7 +37,7 @@
           <h2 class="column-title">{{ name }}</h2>
           <ul id={{ id }} class="column-card-list"></ul>
           <button class="btn-delete btn-round"><i class="fas fa-times"></i></button>
-          <button class="add-card">Add a card <span class="btn-round btn-add"><i class="fas fa-plus"></i></span></button>
+          <button class="add-card">Add a card <i class="btn-add fas fa-plus"></i></button>
       </div>
     </script>
     <!-- card template -->
