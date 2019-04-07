@@ -4,12 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanban board</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <div id="board" class="board">
-      <h1>Kanban board</h1>
-      <button class="create-column">Add a column</button>
+      <header>
+        <h1>Kanban board</h1>
+        <button class="create-column">
+          Add a column <span class="btn-round btn-add"><i class="fas fa-plus"></i></span></i>
+        </button>
+      </header>
+
       <div class="column-container"></div>
     </div>
 
@@ -21,15 +32,16 @@
       <div class="column">
           <h2 class="column-title">{{ name }}</h2>
           <ul id={{ id }} class="column-card-list"></ul>
-          <button class="btn-delete">X</button>
-          <button class="add-card">Add a card</button>
+          <button class="btn-round btn-delete"><i class="fas fa-times"></i></button>
+          <button class="add-card">Add a card <span class="btn-round btn-add"><i class="fas fa-plus"></i></span></button>
       </div>
     </script>
     <!-- card template -->
     <script id="card-template" type="x-tmpl-mustache">
       <div class="card" id={{ id }}>
+          <button class="btn-round btn-delete"><i class="fas fa-times"></i></button>
         <p class="card-description">{{ description }}</p>
-        <button class="btn-delete">x</button>
+
       </div>
     </script>
     <script src="js/script.js"></script>

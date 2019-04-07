@@ -1,0 +1,71 @@
+$page-header: #3b2416;
+$column-header: #be7a25;
+$col-background: #bea88b;
+$card-background: rgb(248, 238, 225);
+$add-btn-column: #643604;
+$add-btn: rgb(47, 212, 18);
+$add-btn-hover: rgb(42, 156, 22);
+$remove-btn: rgb(255, 32, 32);
+$remove-btn-hover: rgb(179, 11, 11);
+
+body {
+  background: url("../images/cogs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+// .btn-add {
+// 	background: $add-btn;
+// 	&:hover {
+//         background-color: $add-btn-hover;
+
+header {
+  background: rgba(248, 238, 225, 0.3);
+  color: $page-header;
+  padding: 16px;
+  button {
+    background: $add-btn-column;
+    color: white;
+    border: 0;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+
+.column-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.column {
+  background: $col-background;
+  border-radius: 12px;
+  min-width: 150px;
+  min-height: 180px;
+  margin: 6px;
+  padding: 10px 2px;
+
+  .column-title {
+    color: $column-header;
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 4px;
+  }
+}
+.card {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  background: $card-background;
+  color: $page-header;
+  padding: 10px;
+  margin: 10px 2px;
+}

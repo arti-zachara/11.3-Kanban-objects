@@ -16,9 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
   function generateTemplate(name, data, basicElement) {
     var template = document.getElementById(name).innerHTML;
     var element = document.createElement(basicElement || "div");
-    // if (name == 'column-template'){
-    // 		element.classList.add('col-parent');
-    // 	}
     Mustache.parse(template);
     element.innerHTML = Mustache.render(template, data);
 
