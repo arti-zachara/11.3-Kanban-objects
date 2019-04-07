@@ -22,6 +22,18 @@ document.addEventListener("DOMContentLoaded", function() {
     return element;
   }
 
+  // Board class constructor
+  // function Board(name) {
+  //   var self = this;
+
+  //   this.id = randomString();
+  //   this.name = name;
+  //   this.element = generateTemplate("board-template", {
+  //     name: this.name,
+  //     id: this.id
+  //   });
+  // }
+
   //   Column class constructor
   function Column(name) {
     var self = this;
@@ -99,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
     addColumn: function(column) {
       this.element.appendChild(column.element);
       initSortable(column.id, "kanban-column");
+      initSortable("col-container", "kanban-board");
     },
     element: document.querySelector("#board .column-container")
   };
