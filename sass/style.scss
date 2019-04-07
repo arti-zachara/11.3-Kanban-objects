@@ -12,13 +12,21 @@ $header-font: "Fredericka the Great", cursive;
 $text-font: "Open Sans Condensed", sans-serif;
 
 body {
-  background: url("../images/cogs.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  background-image: url("../images/cogs.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: right;
   font-family: $text-font;
 }
+
+// buttons
 button {
   color: white;
   cursor: pointer;
@@ -48,10 +56,12 @@ button {
 .btn-add {
   margin-left: 4px;
 }
+//header
 header {
   background: rgba(248, 238, 225, 0.3);
   color: $page-header;
   padding: 16px;
+  width: 100%;
   h1 {
     font-family: $header-font;
     font-weight: 300;
@@ -70,10 +80,13 @@ header {
   }
 }
 
+// board: columns
 .column-container {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 10px;
+  width: 100%;
 }
 
 .column {
@@ -124,6 +137,6 @@ header {
   border-radius: 10px;
   background: $card-background;
   color: $page-header;
-  padding: 10px;
+  padding: 4px 8px;
   margin: 4px 2px;
 }
