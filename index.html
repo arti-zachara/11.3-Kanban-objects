@@ -17,22 +17,25 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <div class="board-container">
-      <div id="board" class="board">
-        <header>
-          <h1>Kanban board</h1>
-          <button class="create-column">
-            Add a column <i class="btn-add fas fa-plus"></i>
-          </button>
-        </header>
-
-        <div class="column-container" id="col-container"></div>
-      </div>
-    </div>
+    <div class="board-container" id="board-container">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"></script>
 
+    <!-- board template -->
+    <script id="board-template" type="x-tmpl-mustache">
+    <div class="board" id={{ id }}>
+        <header>
+          <h1>{{ name }}</h1>
+          <button class="create-column">
+            Add a column <i class="btn-add fas fa-plus"></i>
+          </button>
+        </header>
+      
+        <div class="column-container"></div>
+      </div>
+    </div>
+  </script>
     <!-- column template -->
     <script id="column-template" type="x-tmpl-mustache">
       <div class="column">
