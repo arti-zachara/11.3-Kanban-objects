@@ -4,6 +4,38 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+}
+
+.btn-round {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.btn-round i {
+  margin: auto;
+  font-size: 14px;
+}
+
+.btn-round.btn-delete {
+  background-color: #ff2020;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.btn-round.btn-delete:hover {
+  background-color: #b30b0b;
 }
 
 header {
@@ -12,11 +44,17 @@ header {
   padding: 16px;
 }
 
+header h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 300;
+}
+
 header button {
   background: #643604;
   color: white;
   border: 0;
   border-radius: 12px;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 12px;
   padding: 12px;
 }
@@ -30,6 +68,7 @@ header button {
 }
 
 .column {
+  position: relative;
   background: #bea88b;
   border-radius: 12px;
   min-width: 150px;
@@ -40,6 +79,8 @@ header button {
 
 .column .column-title {
   color: #be7a25;
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 300;
   display: inline-block;
   padding: 0 12px;
   margin: 0;

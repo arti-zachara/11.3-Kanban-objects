@@ -1,3 +1,4 @@
+// colors
 $page-header: #3b2416;
 $column-header: #be7a25;
 $col-background: #bea88b;
@@ -8,27 +9,59 @@ $add-btn-hover: rgb(42, 156, 22);
 $remove-btn: rgb(255, 32, 32);
 $remove-btn-hover: rgb(179, 11, 11);
 
+// fonts
+$header-font: "Fredericka the Great", cursive;
+$text-font: "Open Sans Condensed", sans-serif;
+
 body {
   background: url("../images/cogs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   padding: 0;
+  font-family: $text-font;
 }
-// .btn-add {
-// 	background: $add-btn;
-// 	&:hover {
-//         background-color: $add-btn-hover;
+button {
+  color: white;
+  cursor: pointer;
+}
+.btn-round {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  padding: 2px;
+  i {
+    margin: auto;
+    font-size: 14px;
+  }
+  &.btn-delete {
+    background-color: $remove-btn;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    &:hover {
+      background-color: $remove-btn-hover;
+    }
+  }
+}
 
 header {
   background: rgba(248, 238, 225, 0.3);
   color: $page-header;
   padding: 16px;
+  h1 {
+    font-family: $header-font;
+    font-weight: 300;
+  }
   button {
     background: $add-btn-column;
     color: white;
     border: 0;
     border-radius: 12px;
+    font-family: $text-font;
     font-size: 12px;
     padding: 12px;
   }
@@ -41,6 +74,7 @@ header {
 }
 
 .column {
+  position: relative;
   background: $col-background;
   border-radius: 12px;
   min-width: 150px;
@@ -50,6 +84,8 @@ header {
 
   .column-title {
     color: $column-header;
+    font-family: $header-font;
+    font-weight: 300;
     display: inline-block;
     padding: 0 12px;
     margin: 0;
@@ -68,4 +104,9 @@ header {
   color: $page-header;
   padding: 10px;
   margin: 10px 2px;
+  //   .btn-delete {
+  //     position: absolute;
+  //     right: -3px;
+  //     top: -5px;
+  //   }
 }
