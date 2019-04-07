@@ -60,10 +60,10 @@ header {
     background: $add-btn-column;
     color: white;
     border: 0;
-    border-radius: 12px;
+    border-radius: 10px;
     font-family: $text-font;
-    font-size: 12px;
-    padding: 12px;
+    font-size: 14px;
+    padding: 10px;
   }
 }
 
@@ -78,7 +78,7 @@ header {
   background: $col-background;
   border-radius: 12px;
   min-width: 150px;
-  min-height: 180px;
+  min-height: 140px;
   margin: 6px;
   padding: 10px 2px;
 
@@ -94,6 +94,17 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 4px;
+  }
+  .add-card {
+    background: $card-background;
+    color: $page-header;
+    opacity: 0.5;
+    margin: 6px;
+    border: 0;
+    border-radius: 10px;
+    font-family: $text-font;
+    font-size: 12px;
+    padding: 4px 10px;
   }
 }
 .card {
