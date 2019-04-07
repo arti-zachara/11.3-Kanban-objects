@@ -60,11 +60,12 @@ button {
 header {
   background: rgba(248, 238, 225, 0.3);
   color: $page-header;
-  padding: 16px;
+  padding: 2px 16px 12px 16px;
   width: 100%;
   h1 {
     font-family: $header-font;
     font-weight: 300;
+    margin: 8px 0 4px 0;
   }
   .create-column {
     background: $add-btn-column;
