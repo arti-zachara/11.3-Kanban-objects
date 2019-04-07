@@ -37,7 +37,10 @@ document.addEventListener("DOMContentLoaded", function() {
     this.element
       .querySelector(".column")
       .addEventListener("click", function(event) {
-        if (event.target.classList.contains("btn-delete")) {
+        if (
+          event.target.classList.contains("btn-delete") ||
+          event.target.classList.contains("fa-times")
+        ) {
           self.removeColumn();
         }
 
