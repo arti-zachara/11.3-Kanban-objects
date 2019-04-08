@@ -36,9 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
     this.element
       .querySelector(".create-column")
       .addEventListener("click", function() {
-        var name = prompt("Enter a column name");
-        var column = new Column(name);
-        self.addColumn(column);
+        var nameProvided = prompt("Enter a column name", "New list");
+        if (nameProvided != null) {
+          var name = nameProvided;
+          var column = new Column(name);
+          self.addColumn(column);
+        }
       });
   }
   // Board methods
@@ -78,7 +81,10 @@ document.addEventListener("DOMContentLoaded", function() {
           event.target.classList.contains("add-card") ||
           event.target.classList.contains("btn-add")
         ) {
-          self.addCard(new Card(prompt("Enter the name of the card")));
+          var nameProvided = prompt("Enter the name of the card", "New task");
+          if (nameProvided != null) {
+            self.addCard(new Card(nameProvided));
+          }
         }
       });
   }
