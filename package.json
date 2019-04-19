@@ -1,7 +1,7 @@
 {
   "name": "Kanban",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kodilla task 11.6 -Kanban - task management app - js objects",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
@@ -44,10 +44,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arti-zachara/learning-git-2.git"
+    "url": "git+https://arti-zachara.github.io/11.3-Kanban-objects.git"
   },
   "bugs": {
-    "url": "https://github.com/arti-zachara/learning-git-2/issues"
+    "url": "https://arti-zachara.github.io/11.3-Kanban-objects/issues"
   },
-  "homepage": "https://github.com/arti-zachara/learning-git-2#readme"
+  "homepage": "https://arti-zachara.github.io/11.3-Kanban-objects#readme"
 }
